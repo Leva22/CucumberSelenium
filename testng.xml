@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite_jenkinsIntegration">
+	<!-- LISTENERS To perform any action in caso of.... Start, Faillure etc.. -->
+	<listeners>
+		<listener class-name="basic_tests.TestResult_Listener" />
+	</listeners>
+	<test thread-count="5" name="Test from Jenkins">
+		<!-- Executing test using a pakage name -->
+		<packages>
+			<package name="basic_tests"></package>
+		</packages>
+
+	<!-- 	<classes>
+			<class name="basic_tests.Basic_1" />
+			<class name="basic_tests.Basic_2" />
+		</classes> -->
+		
+	</test> <!-- Test from Jenkins -->
+</suite> <!-- Suite_jenkinsIntegration -->

@@ -1,0 +1,7 @@
+basic_tests\TestResult_Listener.class
+jenkins_integration\Base_browser.class
+jenkins_integration\ErrorValidations.class
+jenkins_integration\initAbstractComponents.class
+jenkins_integration\InitPage.class
+basic_tests\Basic_1.class
+basic_tests\Basic_2.class

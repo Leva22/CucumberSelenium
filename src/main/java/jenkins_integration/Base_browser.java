@@ -22,22 +22,23 @@ public class Base_browser {
 	protected WebDriver driver = null;
 	protected LandingPage homePage = null;
 
-//	public static void main(String[] args) {
-//		configBase();
-//	}
+	// public static void main(String[] args) {
+	// configBase();
+	// }
 
 	public void configBase() {
 
-		ChromeOptions options = new ChromeOptions();
+		// ChromeOptions options = new ChromeOptions();
 
 		/**
 		 * The argumet headless help to excecute chrome on backgruund for jenkinks
 		 * excecution.
 		 */
-		options.addArguments("headless");
 
-		driver = new ChromeDriver(options);
-		driver.manage().window().maximize();
+		// options.addArguments("headless");
+
+		driver = new ChromeDriver();
+		// driver.manage().window().maximize();
 		// Establishing implicit timing.
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
